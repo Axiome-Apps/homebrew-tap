@@ -19,7 +19,7 @@ cask "plume" do
 
     postflight do
       system_command "/usr/bin/xattr",
-                     args: ["-cr", "#{appdir}/Plume.app"],
+                     args: ["-dr", "com.apple.quarantine", "#{appdir}/Plume.app"],
                      sudo: false
     end
 
