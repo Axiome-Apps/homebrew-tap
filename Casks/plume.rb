@@ -17,6 +17,12 @@ cask "plume" do
 
     app "Plume.app"
 
+    postflight do
+      system_command "/usr/bin/xattr",
+                     args: ["-cr", "#{appdir}/Plume.app"],
+                     sudo: false
+    end
+
     zap trash: [
       "~/Library/Application Support/com.axiome.plume",
       "~/Library/Preferences/com.axiome.plume.plist",
