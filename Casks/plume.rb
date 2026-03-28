@@ -2,12 +2,12 @@ cask "plume" do
     version "0.1.0"
 
     on_arm do
-      sha256 "d8f7bd74e47fe3d614c3d59711730f9fd99d00b2639bff836307dd291a4f03b4"
+      sha256 "e65428706d00171a723cd8c1e789b16641d363231a559c1933864b48b6744bbc"
       url "https://github.com/Axiome-Apps/Plume/releases/download/v#{version}/Plume_#{version}_aarch64.dmg"
     end
 
     on_intel do
-      sha256 "74e74d1a19ab1fbb120036624c5046818f5e96b609f6797827025b22c7e48274"
+      sha256 "1008ac6e3582f38ea0764313aa2fea274ea4ac3b86cc23ab277a7a6678de15e2"
       url "https://github.com/Axiome-Apps/Plume/releases/download/v#{version}/Plume_#{version}_x64.dmg"
     end
 
